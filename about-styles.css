@@ -1,0 +1,71 @@
+body {
+    font-family: 'PT Serif', serif;
+    grid-template-columns: 50vh 50vh;
+    grid-template-rows: 50vh 50vh;
+    border: 2%;
+    padding: 2%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 100;
+    grid-template-rows: 25%;
+    text-align: center;
+  }
+
+  .intro > h3 {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .travels {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: center;
+  }
+
+  .career-goals {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50%;
+    text-align: center;
+  }
+  
+  @media (max-width: 576px) {
+   body {
+    grid-template-rows: auto;
+   }
+   
+   .intro {
+    display: grid;
+    grid-template-columns: 100;
+    grid-template-rows: 25%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .travels {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .career-goals {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  }
