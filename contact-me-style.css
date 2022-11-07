@@ -1,0 +1,19 @@
+body {
+    font-family: 'PT Serif', serif;
+    display: grid;
+    grid-template-columns: 50vh 50vh;
+    grid-template-rows: 50vh 50vh;
+    margin-left: 20px;
+  }
+
+header {
+    border-bottom: 2px solid #1940A9;
+    margin: 3% auto;
+    display: grid;
+    grid-column: 2/3;
+  }
+
+  @media (max-width: 576px) {
+    body {
+     grid-template-rows: auto;
+    }
